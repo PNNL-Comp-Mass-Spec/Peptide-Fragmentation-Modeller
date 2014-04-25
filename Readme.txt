@@ -2,7 +2,8 @@ Peptide Fragmentation Modeller
 
 This program is a command-line utility reads that reads in a text file of 
 peptide sequences and generates the theoretical fragmentation pattern 
-for each, outputting the results in a single concatenated DTA file, or in 
+for each using the VB.NET DLL version of the Molecular Weight Calculator
+Results are reported as a single concatenated DTA file, or in 
 separate .Dta files.  The ion intensity values are not predicted values; 
 instead, b, c, y, and z ions are assigned an intensity of 100; while a ions 
 and neutral loss ions receive an intensity of 20.  
@@ -23,6 +24,9 @@ options available to the user. Double clicking on the program in an Explorer-sty
 window will also show the user options, but the program will terminate upon 
 closing the dialog, so the command line option outlined above is still required.
 
+Note that the _DTA.txt file can be converted to a Mascot Generic Format (MGF) file
+using the Concatenated DTA to Mascot Generic File (MGF) File Converter application,
+available at http://omics.pnl.gov/software
 
 Program syntax:
 PeptideFragmentationModeller.exe
@@ -89,8 +93,8 @@ Use /L:LogFilePath to specify the name (or full path) for the log file.
 -------------------------------------------------------------------------------
 Written by Matthew Monroe for the Department of Energy (PNNL, Richland, WA)
 
-E-mail: matthew.monroe@pnl.gov or matt@alchemistmatt.com
-Website: http://ncrr.pnl.gov/ or http://www.sysbio.org/resources/staff/
+E-mail: matthew.monroe@pnnl.gov or matt@alchemistmatt.com
+Website: http://panomics.pnl.gov/ or http://www.sysbio.org/resources/staff/
 -------------------------------------------------------------------------------
 
 Licensed under the Apache License, Version 2.0; you may not use this file except 
