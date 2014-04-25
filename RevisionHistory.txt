@@ -1,0 +1,49 @@
+Peptide Fragmentation Modeller
+
+Version 1.2.5228; April 25, 2014
+	- New version of MwtWinDLL
+	- Added clsProcessFilesOrFoldersBase
+
+Version 1.2.4918; June 19, 2013
+	- Added switch /MassValues
+		- Will display the list of mass values used by the program (both elements and amino acids)
+		- Use /MassValues:Filename.txt to save the mass values to the specified text file instead of displaying them at the console
+
+Version 1.2.4098; March 22, 2011
+	- Added switch /Mods, which can be used to define custom mod symbols
+		- for example: /Mods:+=14.01565;@=15.99492
+	- Added switch /L, which can be used to log messages to a file
+
+Version 1.2.3989; December 3, 2010
+	- Added ability to control which ions are shown using either an XML parameter file or command line switches
+	- New switches:
+		- /Double to show doubly charged ions; default is at 800 m/z or higher
+			- Customize the m/z to 600 like this: /Double:600
+		- /Triple to show triply charged ions; default is at 900 m/z or higher
+			- Customize the m/z to 600 like this: /Triple:1100
+		- /A to show A Ions
+		- /B to show B Ions; use /B:False to disable B ions
+		- /Y to show Y Ions; use /Y:False to disable Y ions
+		- /C to show C Ions
+		- /Z to show Z Ions
+		- /NLWater to include water neutral loss ions
+		- /NLAmmonia to include ammonia neutral loss ions
+		- /NLPhosphate to include phosphate neutral loss ions
+		- /Label to include a text label for each ion in the .DTA files
+		- /Label:verbose to include verbose text labels
+		- By default, will show B and Y ions, but not neutral loss ions
+			- Disable an ion type using :False as shown above
+		- Switch /ETD will turn off b and y ions and turn on c and z ions, and thus is equivalent to this set of switches
+			/A:False /B:False /Y:False /C /Z
+		- Switch /Overwrite will cause existing .DTA files to be overwritten
+
+Version 1.1.3843; July 10, 2010
+	- New version of MwtWindll.dll
+	- Removed references to Prism.DLL, ProgressFormNET.dll, and SharedVBNetRoutines.dll
+
+Version 1.1.3386; April 9, 2009
+	- Now using VB.NET version of MwtWinDll.Dll
+
+Version 1.0.1907; July 29, 2005
+	- Stable release
+	- Using VB6 version of MwtWinDll.dll

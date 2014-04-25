@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sections>
+  <section name="PeptideFragmentationModeller">
+  	
+	<item key="ConcatenatedDTA" value="True" />
+	<item key="ConcatenatedDTAFileName" value="ModelSpectra_dta.txt" />
+	
+	<item key="OverwriteExistingFiles" value="True" />
+	
+	<item key="ShowAIons" value="False" />
+	<item key="ShowBIons" value="True" />
+	<item key="ShowCIons" value="False" />
+	<item key="ShowYIons" value="True" />
+	<item key="ShowZIons" value="False" />
+	
+	<item key="NeutralLossAmmonia" value="False" />
+	<item key="NeutralLossPhosphate" value="False" />
+	<item key="NeutralLossWater" value="False" />
+		
+	<item key="IncludeShoulderIons" value="False" />
+		
+	<item key="IncludeDoublyChargedIons" value="False" />
+	<item key="DoubleChargeMZThreshold" value="800" />
+	<item key="IncludeTriplyChargedIons" value="False" />
+	<item key="TripleChargeMZThreshold" value="900" />
+	
+	<item key="LabelIons" value="True" />
+	<item key="LabelIonsVerbose" value="False" />
+	
+  </section>
+</sections>
