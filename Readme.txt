@@ -93,8 +93,8 @@ Use /L:LogFilePath to specify the name (or full path) for the log file.
 -------------------------------------------------------------------------------
 Written by Matthew Monroe for the Department of Energy (PNNL, Richland, WA)
 
-E-mail: matthew.monroe@pnnl.gov or matt@alchemistmatt.com
-Website: http://omics.pnl.gov/ or http://www.sysbio.org/resources/staff/
+E-mail: matthew.monroe@pnnl.gov or proteomics@pnnl.gov
+Website: https://github.com/PNNL-Comp-Mass-Spec/ or https://www.pnnl.gov/integrative-omics
 -------------------------------------------------------------------------------
 
 Licensed under the Apache License, Version 2.0; you may not use this file except 

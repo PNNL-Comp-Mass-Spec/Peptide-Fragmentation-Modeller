@@ -9,7 +9,7 @@ Option Strict On
 ' E-mail: matthew.monroe@pnl.gov or matt@alchemistmatt.com
 ' Website: http://ncrr.pnl.gov/ or http://www.sysbio.org/resources/staff/
 ' -------------------------------------------------------------------------------
-' 
+'
 '
 ' Example command line:
 '  InputFilePath.txt /o:OutputFolderPath
@@ -21,8 +21,8 @@ Module modMain
 	Public Const PROGRAM_DATE As String = "April 25, 2014"
 
 	Private mInputFilePath As String
-	Private mOutputFolderPath As String				' Optional
-	Private mParameterFilePath As String			' Optional
+	Private mOutputFolderPath As String             ' Optional
+	Private mParameterFilePath As String            ' Optional
 	''Private mOutputFolderAlternatePath As String    ' Optional
 
 	Private mLogMessagesToFile As Boolean
@@ -127,9 +127,9 @@ Module modMain
 				Return 0
 			End If
 
-			If Not blnProceed OrElse _
-			   objParseCommandLine.NeedToShowHelp OrElse _
-			   objParseCommandLine.ParameterCount + objParseCommandLine.NonSwitchParameterCount = 0 OrElse _
+			If Not blnProceed OrElse
+			   objParseCommandLine.NeedToShowHelp OrElse
+			   objParseCommandLine.ParameterCount + objParseCommandLine.NonSwitchParameterCount = 0 OrElse
 			   mInputFilePath.Length = 0 Then
 				ShowProgramHelp()
 				intReturnCode = -1
@@ -281,13 +281,13 @@ Module modMain
 		' Returns True if no problems; otherwise, returns false
 
 		Dim strValue As String = String.Empty
-		Dim strValidParameters() As String = New String() {"I", "O", "P", "Double", "Triple", "A", "B", "C", "Y", "Z", _
-			  "NLWater", "NLAmmonia", "NLPhosphate", "IonShoulder", "Shoulder", "ETD", "Label", _
+		Dim strValidParameters() As String = New String() {"I", "O", "P", "Double", "Triple", "A", "B", "C", "Y", "Z",
+			  "NLWater", "NLAmmonia", "NLPhosphate", "IonShoulder", "Shoulder", "ETD", "Label",
 			  "Overwrite", "Over", "DTA", "CDTA", "Mods", "L", "MassValues"}
 		Dim sngValue As Single
 
 		Try
-			' Make sure no invalid parameters are present 
+			' Make sure no invalid parameters are present
 			If objParseCommandLine.InvalidParametersPresent(strValidParameters) Then
 				Return False
 			Else

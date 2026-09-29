@@ -1,4 +1,4 @@
-﻿Option Strict On
+Option Strict On
 
 Imports System.IO
 Imports System.Threading

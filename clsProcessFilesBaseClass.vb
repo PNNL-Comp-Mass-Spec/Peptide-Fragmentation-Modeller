@@ -22,7 +22,7 @@ Public MustInherit Class clsProcessFilesBaseClass
 	''' <remarks></remarks>
 	Public Sub New()
 		mFileDate = "October 17, 2013"
-		mErrorCode = eProcessFilesErrorCodes.NoError		
+		mErrorCode = eProcessFilesErrorCodes.NoError
 	End Sub
 
 #Region "Constants and Enums"
@@ -61,7 +61,7 @@ Public MustInherit Class clsProcessFilesBaseClass
 #End Region
 
 #Region "Interface Functions"
-	
+
 	''' <summary>
 	''' This option applies when processing files matched with a wildcard
 	''' </summary>
@@ -351,7 +351,7 @@ Public MustInherit Class clsProcessFilesBaseClass
 		' Calls ProcessFiles for all files in strInputFilePathOrFolder and below having an extension listed in strExtensionsToParse()
 		' The extensions should be of the form ".TXT" or ".RAW" (i.e. a period then the extension)
 		' If any of the extensions is "*" or ".*" then all files will be processed
-		' If strInputFilePathOrFolder contains a filename with a wildcard (* or ?), then that information will be 
+		' If strInputFilePathOrFolder contains a filename with a wildcard (* or ?), then that information will be
 		'  used to filter the files that are processed
 		' If intRecurseFoldersMaxLevels is <=0 then we recurse infinitely
 
